@@ -86,7 +86,8 @@
 / {
 
     chosen {
-        zmk,physical-layouts = &kv63_layout;
+        zmk,kscan = &kscan0;
+	zmk,physical-layouts = &kv63_layout;
     };
 
     default_transform: keymap_transform_0 {
