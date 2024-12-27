@@ -12,7 +12,7 @@
         compatible = "zmk,physical-layout";
         display-name = "kv63";
 
-        kscan = <&kscan0>;
+        kscan = <&kscan>;
         transform = <&matrix_transform0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -86,7 +86,6 @@
 / {
 
     chosen {
-        zmk,kscan = &kscan0;
 	zmk,physical-layouts = &kv63_layout;
     };
 
@@ -116,7 +115,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4)                 RC(4,7) RC(4,8) RC(4,9) 
 
 	transform = <&default_transform>;
 
-	kscan = <&kscan0>;
+	kscan = <&kscan>;
 
 };
 
